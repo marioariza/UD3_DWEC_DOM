@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/js.png">
-    <title>ACT1 - DOM</title>
-    <!-- <script src="001children.js"></script> -->
+    <title>ACT2 - DOM</title>
+    <!-- <script src="002siblings.js"></script> -->
 </head>
 <body>
-    <div>Users:</div>
-    <ul>
-        <li>Steve Rogers</li>
-        <li>Peter Parker</li>
-    </ul>
+
+    <div id="elem">
+        Mario
+        <h1>Prueba</h1>
+    </div>
 
     <script>
-        alert(document.body.firstElementChild);
-        alert(document.body.getElementsByTagName('ul'));
+        let elem = document.getElementById("elem");
+        alert(elem.lastChild.nextSibling);
+        alert(elem.children[0].previousSibling);
     </script>
+    
 </body>
 </html>

@@ -4,7 +4,9 @@
 ellos:
 ¿El nodo <div> del DOM? */
 
-console.log(document.body.firstElementChild); // div, ya que el <div> es el primer hijo del body.
+alert(document.body.firstElementChild); // div, ya que el <div> es el primer hijo del body.
+
+
 
 // ¿El nodo <ul> del DOM?
 // ¿El segundo <li> (con Peter Parker)?
