@@ -5,18 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/js.png">
-    <title>ACT1 - DOM</title>
+    <title>ACT7 - DOM</title>
     <!-- <script src="001children.js"></script> -->
 </head>
 <body>
-    <div>Users:</div>
-    <ul>
-        <li>Steve Rogers</li>
-        <li>Peter Parker</li>
-    </ul>
-
     <script>
-        alert(document.body.firstElementChild);
+        let body = document.body;
+        body.innerHTML = "<!--" + body.tagName + "-->";
+        alert( body.firstChild.data ); // ¿qué hay aquí?
     </script>
 </body>
 </html>

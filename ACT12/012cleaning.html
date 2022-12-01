@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/js.png">
-    <title>ACT1 - DOM</title>
+    <title>ACT12 - DOM</title>
     <!-- <script src="001children.js"></script> -->
 </head>
 <body>
-    <div>Users:</div>
-    <ul>
-        <li>Steve Rogers</li>
-        <li>Peter Parker</li>
-    </ul>
+    <ol id="elem">
+        <li>Hola</li>
+        <li>mundo</li>
+    </ol>
 
     <script>
-        alert(document.body.firstElementChild);
+        function clear(elem) {
+            document.getElementById("elem").innerHTML = "";
+        }
+
+        clear(elem); // borra la lista
     </script>
 </body>
 </html>
