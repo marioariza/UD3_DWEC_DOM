@@ -7,7 +7,8 @@
 haber un nextSibling */
 
 let elem = document.getElementById("elem");
-alert(elem.lastChild.nextSibling);
+        alert(elem.lastChild.nextSibling);
+        alert(elem.children[0].previousSibling);
 
 // ---------------------------------
 
