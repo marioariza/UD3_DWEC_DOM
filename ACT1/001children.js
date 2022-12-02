@@ -16,6 +16,6 @@ alert(ul);
 
 // ¿El segundo <li> (con Peter Parker)?
 
-let li = document.querySelector('ul').lastElementChild;
+let li = ul.children[1];
 li.style.color = "blue";
 alert(li);
