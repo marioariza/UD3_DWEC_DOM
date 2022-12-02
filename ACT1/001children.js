@@ -4,9 +4,18 @@
 ellos:
 ¿El nodo <div> del DOM? */
 
-alert(document.body.firstElementChild); // div, ya que el <div> es el primer hijo del body.
-
-
+let div = document.querySelector('div');
+div.style.color = "green";
+alert(div);
 
 // ¿El nodo <ul> del DOM?
+
+let ul = document.querySelector('ul');
+ul.style.color = "red";
+alert(ul);
+
 // ¿El segundo <li> (con Peter Parker)?
+
+let li = document.querySelector('ul').lastElementChild;
+li.style.color = "blue";
+alert(li);

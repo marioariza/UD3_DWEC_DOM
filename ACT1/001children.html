@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/js.png">
     <title>ACT1 - DOM</title>
-    <!-- <script src="001children.js"></script> -->
+    <script src="001children.js"></script>
 </head>
 <body>
     <div>Users:</div>
@@ -16,7 +16,15 @@
     </ul>
 
     <script>
-        alert(document.body.firstElementChild);
+        let div = document.querySelector('div');
+        div.style.color = "green";
+        alert(div);
+        let ul = document.querySelector('ul');
+        ul.style.color = "red";
+        alert(ul);
+        let li = document.querySelector('ul').lastElementChild;
+        li.style.color = "blue";
+        alert(li);
     </script>
 </body>
 </html>
