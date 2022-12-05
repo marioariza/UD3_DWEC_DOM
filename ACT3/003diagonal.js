@@ -8,7 +8,9 @@ for (let i = 0; i < tds.length; i++) {
   if (i > trs.length) {
     pos += trs.length + 1;
     tds[pos].style.backgroundColor= "red";
+    tds[pos].style.color = "white";
   } else {
     tds[pos].style.backgroundColor = "red";
+    tds[pos].style.color = "white";
   }
 }
