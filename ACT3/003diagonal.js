@@ -1,9 +1,14 @@
 "use strict";
 
-let table = document.body.firstElementChild;
+let trs = document.querySelectorAll('tr');
+let tds = document.querySelectorAll('td');
+let contador = 0;
 
-for (let i = 0; i < table.rows.length; i++) {
-  let row = table.rows[i];
-  row.cells[i].style.backgroundColor = 'red';
+for (let i = 0; i < tds.length; i++) {
+  if (i > trs.length) {
+    tds[contador + trs.length + 1].style.backgroundColor= "red";
+    contador = contador + trs.length + 1;
+  } else {
+    tds[contador].style.backgroundColor = "red";
+  }
 }
-
