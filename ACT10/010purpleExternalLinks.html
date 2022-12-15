@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/js.png">
     <title>ACT10 - DOM</title>
-    <!-- <script src="001children.js"></script> -->
+    <script src="010purpleExternalLinks.js" defer></script>
 </head>
 <body>
     <a name="list">the list</a>
@@ -18,20 +18,5 @@
         <li><a href="http://nodejs.org">http://nodejs.org</a></li>
         <li><a href="http://internal.com/test">http://internal.com/test</a></li>
     </ul>
-
-    <script>
-        // establecer un estilo para un enlace
-        let links = document.querySelectorAll('a');
-        for (let link of links) {
-
-            let atributo = link.getAttribute('href');
-
-            if (!atributo || !atributo.includes('://') || atributo.startsWith('http://internal.com')){
-                continue;
-            } 
-            link.style.color = 'purple';
-            
-        }
-    </script>
 </body>
 </html>
