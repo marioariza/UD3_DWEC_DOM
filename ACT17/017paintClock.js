@@ -2,8 +2,6 @@
 
 function reloj() {
 
-    let reloj = document.getElementById('reloj'); // Recogemos el reloj completo para despues introducir horas, minutos y segundos
-    
     let fecha_actual = new Date(); // Recogemos la fecha actual.
 
     let hora = fecha_actual.getHours(); // Recogemos la hora actual dentro de la fecha actual.
@@ -15,9 +13,19 @@ function reloj() {
     let span_minutos = document.getElementById('minutos');
     let span_segundos = document.getElementById('segundos');
 
+    if (hora < 10) { // Si la hora es menor a 10, le añadimos un 0 delante para que sea mejor visualmente (21:7:3 se vería 21:07:03).
+        hora = '0' + hora; 
+    } else if (minutos < 10) {
+        minutos = '0' + minutos;
+    } else if (segundos < 10) {
+        segundos = '0' + segundos;
+    }
+
     span_horas.innerHTML = hora; // Insertamos la hora actual en nuestro span html.
     span_minutos.innerHTML = minutos; // Insertamos los minutos actuales en nuestro span html.
     span_segundos.innerHTML = segundos; // Insertamos los segundos actuales en nuestro span html.
+
+
 
 }
 
