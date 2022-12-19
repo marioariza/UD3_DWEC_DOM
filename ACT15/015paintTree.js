@@ -39,13 +39,13 @@ createTree(container, data); // crea el árbol en el contenedor
 
 function createTree2(container2, obj) {
     container.append(createTreeDom2(obj));
-  }
+}
 
-  function createTreeDom2(obj) {
+function createTreeDom2(obj) {
 
-    let ul = document.createElement('ul');
+let ul = document.createElement('ul');
 
-    for (let key in obj) {
+for (let key in obj) {
       let li = document.createElement('li');
       li.innerHTML = key;
 
